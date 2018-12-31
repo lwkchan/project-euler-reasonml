@@ -1,16 +1,30 @@
+# Project Euler ReasonML
 
+Completing problems from [Project Euler](https://projecteuler.net) with unit testing
 
-# Build
+### Install
+
+```
+git clone https://github.com/lwkchan/project-euler-reasonml.git
+cd project-euler-reasonml
+npm i
+```
+
+### Build
+
 ```
 npm run build
 ```
 
-# Watch
+### Test
+
+```
+npm run test
+```
+
+or, in watch mode...
 
 ```
 npm run watch
+npm run watch:test (in second terminal tab)
 ```
-
-
-# Editor
-If you use `vscode`, Press `Windows + Shift + B` it will build automatically
