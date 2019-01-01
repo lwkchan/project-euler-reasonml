@@ -32,6 +32,5 @@ function f(number) {
   return res;
 }
 
-exports.fib = fib;
 exports.f = f;
 /* No side effect */
