@@ -19,11 +19,12 @@ function f(number) {
   var current = 0;
   var res = 0;
   while(!$$break) {
-    if (fib(current) >= number) {
+    var currentFib = fib(current);
+    if (currentFib >= number) {
       $$break = true;
     } else {
-      if (fib(current) % 2 === 0) {
-        res = res + fib(current) | 0;
+      if (currentFib % 2 === 0) {
+        res = res + currentFib | 0;
       }
       current = current + 1 | 0;
     }

@@ -10,11 +10,12 @@ let f = number => {
   let current = ref(0);
   let res = ref(0);
   while (! break^) {
-    if (fib(current^) >= number) {
+    let currentFib = fib(current^);
+    if (currentFib >= number) {
       break := true;
     } else {
-      if (fib(current^) mod 2 == 0) {
-        res := res^ + fib(current^);
+      if (currentFib mod 2 == 0) {
+        res := res^ + currentFib;
       };
       current := current^ + 1;
     };
